@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>IDoc Framework</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBC_FG_IDOC_FWTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBC_FG_IDOC_FW</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_IDOC_INPUT_FW</FUNCNAME>
+     <SHORT_TEXT>Inbound IDoc processing framework</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-INPUTMETHD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-MASS_PROC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-RESULT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-APPL_VAR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-UPDATETASK</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDWFAP_PAR-CALLTRANS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <DBSTRUCT>BDWFRETVAR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <DBSTRUCT>BDI_SER</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_FUNCTION_CALLED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inbound method for the IDoc inbound function module</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Mass processing</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Final value of method</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Variable to be used by application as required</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has triggered update task</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has actually performed call transaction</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ALE IDoc status (subset of all IDoc status fields)</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Assignment of IDoc or document no. to method parameter</STEXT>
+       <INDEX> 010</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Serialization objects for one/several IDocs</STEXT>
+       <INDEX> 011</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_FUNCTION_CALLED</PARAMETER>
+       <KIND>X</KIND>
+       <INDEX> 012</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_IDOC_OUTPUT_FW</FUNCNAME>
+     <SHORT_TEXT>Outbound IDoc processing framework</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>OBJECT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>NAST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CONTROL_RECORD_IN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>CONTROL_RECORD_OUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OBJECT_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WFAS1-ASGTP</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>INT_EDIDD</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_MESSAGE_RECEIVED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>DATA_NOT_RELEVANT_FOR_SENDING</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>OBJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Status</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CONTROL_RECORD_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CONTROL_RECORD_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OBJECT_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Workflow: Object type of the link</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INT_EDIDD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_MESSAGE_RECEIVED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error during outbound processing</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_NOT_RELEVANT_FOR_SENDING</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Data not relevant</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_IDOC_OUTPUT_FW_PORT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Outbound IDoc processing framework - ABAP Port</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_EDIDC</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_EDIDC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

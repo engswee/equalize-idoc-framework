@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IDoc Framework Base object</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>AD</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_BATCH_WITH_MCHA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert batch number using MCHA (Vendor Batch)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_EXT_BATCH_WITH_MCHA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert external batch number using MCHA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_EXT_MATERIAL_WITH_EINA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert external material number using EINA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_EXT_MATERIAL_WITH_MARA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert external material number using MARA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_EXT_SERIAL_WITH_EQUI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert external serial using EQUI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_MATERIAL_WITH_EINA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert material number using EINA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_MAT_WITH_MARC_MARA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert material number using MARC &amp; MARA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_SERIAL_WITH_EQUI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert serial using EQUI (Manufacture Serial)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_UOM_ISO_TO_SAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert UOM from ISO code to SAP code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>CONVERT_UOM_SAP_TO_ISO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert UOM from SAP code to ISO code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_MSG_TYPE_ABORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_MSG_TYPE_ERROR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_MSG_TYPE_INFO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_MSG_TYPE_SUCCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_MSG_TYPE_WARNING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_STATUS_IN_ERR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status of IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_STATUS_IN_SUCC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status of IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_WF_PARAM_APPOBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Output Parameter of Workflow Method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_WF_PARAM_APPOBJTYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Output Parameter of Workflow Method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_WF_PARAM_ERR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Output Parameter of Workflow Method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_WF_PARAM_SUCC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Output Parameter of Workflow Method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>C_WF_RESULT_ERR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Final value of method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>FREE_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Free the active instance to allow GC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return new or active instance of the IDoc Framework object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>O_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Singleton for buffering IDoc DB data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>O_INTERFACE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Framework Base object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>POPULATE_X_STRUCTURE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Populate X in corresponding X structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>SEND_EMAIL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send Email using SAPConnect</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>SET_PROCESSING_OPTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set the processing options in instance attribute</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_BASE</CLSNAME>
+     <CMPNAME>S_IDOC_OPTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc framework processing options</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

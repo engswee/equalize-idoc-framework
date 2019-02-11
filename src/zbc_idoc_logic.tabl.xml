@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZBC_IDOC_LOGIC</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>TRANSP</TABCLASS>
+    <DDTEXT>IDoc framework Configurable logic options</DDTEXT>
+    <MAINFLAG>X</MAINFLAG>
+    <CONTFLAG>C</CONTFLAG>
+    <EXCLASS>2</EXCLASS>
+   </DD02V>
+   <DD09L>
+    <TABNAME>ZBC_IDOC_LOGIC</TABNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <TABKAT>0</TABKAT>
+    <TABART>APPL0</TABART>
+    <PUFFERUNG>X</PUFFERUNG>
+    <BUFALLOW>X</BUFALLOW>
+   </DD09L>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZBC_IDOC_LOGIC</TABNAME>
+     <FIELDNAME>LOGIC_TYPE</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>ZBC_IDOC_LOGIC_TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <VALEXI>X</VALEXI>
+     <SHLPORIGIN>F</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZBC_IDOC_LOGIC</TABNAME>
+     <FIELDNAME>LOGIC_NAME</FIELDNAME>
+     <POSITION>0002</POSITION>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>ZBC_IDOC_LOGIC_CONFIG</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

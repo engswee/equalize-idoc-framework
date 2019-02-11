@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IDoc Framework Outbound object</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>ADD_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add IDoc status message for outbound port processing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>CLOSE_IDOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Close IDoc after processing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>C_STATUS_OUT_ERR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status of IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>C_STATUS_OUT_SUCC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status of IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>EXECUTE_OUTBOUND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Execute outbound processing for IDoc</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>EXECUTE_OUTBOUND_PORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Execute outbound processing for IDoc from ABAP Port</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>INIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interface initialization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>OPEN_IDOC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open IDoc for process and retrieve data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>POSTPROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Abstract - Postprocessing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>PREPROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Abstract - Preprocessing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>PROCESS_IDOC_FM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Abstract - Process via IDoc Function Module</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>REF_EDIDD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for EDIDD (IDoc Data Records)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>SET_IDOC_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set IDoc outbound status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>START_ERROR_WORKFLOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Trigger workflow for outbound error handling</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>S_EDIDC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Control record (IDoc)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>S_EDIDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status record for interface to EDI subsystem</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>S_NAST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>TRANSMIT_TRFC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transmit IDoc data via tRFC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>T_EDIDD_TEMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for EDIDD (IDoc Data Records)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>VALIDATION_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Validation check (duplicates, etc)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IDOC_OUTPUT</CLSNAME>
+     <CMPNAME>V_OBJ_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Workflow: Object type of the link</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

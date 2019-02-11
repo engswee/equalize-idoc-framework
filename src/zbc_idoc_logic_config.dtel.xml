@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZBC_IDOC_LOGIC_CONFIG</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZBC_IDOC_LOGIC_CONFIG</DOMNAME>
+    <HEADLEN>23</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>23</SCRLEN3>
+    <DDTEXT>Configurable logic for IDoc processing</DDTEXT>
+    <REPTEXT>IDoc configurable logic</REPTEXT>
+    <SCRTEXT_S>Logic</SCRTEXT_S>
+    <SCRTEXT_M>IDoc logic</SCRTEXT_M>
+    <SCRTEXT_L>IDoc configurable logic</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

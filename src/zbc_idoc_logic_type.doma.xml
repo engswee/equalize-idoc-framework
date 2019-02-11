@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZBC_IDOC_LOGIC_TYPE</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000010</LENG>
+    <OUTPUTLEN>000010</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>IDoc logic type</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <DOMNAME>ZBC_IDOC_LOGIC_TYPE</DOMNAME>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>MATNR</DOMVALUE_L>
+     <DDTEXT>Material conversion</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZBC_IDOC_LOGIC_TYPE</DOMNAME>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>KUNNR</DOMVALUE_L>
+     <DDTEXT>Customer conversion</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZBC_IDOC_LOGIC_TYPE</DOMNAME>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>UOM</DOMVALUE_L>
+     <DDTEXT>UOM conversion</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZBC_IDOC_LOGIC_TYPE</DOMNAME>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DUPLICATE</DOMVALUE_L>
+     <DDTEXT>Duplicate check</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
