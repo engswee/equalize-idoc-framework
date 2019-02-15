@@ -1,5 +1,5 @@
 FUNCTION Z_IDOC_INPUT_FW.
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 *"*"Local Interface:
 *"  IMPORTING
 *"     REFERENCE(INPUT_METHOD) TYPE  BDWFAP_PAR-INPUTMETHD
@@ -17,7 +17,7 @@ FUNCTION Z_IDOC_INPUT_FW.
 *"      SERIALIZATION_INFO STRUCTURE  BDI_SER
 *"  EXCEPTIONS
 *"      WRONG_FUNCTION_CALLED
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 ************************************************************************
   DATA:
     lo_interface      TYPE REF TO zcl_idoc_input,
@@ -28,6 +28,9 @@ FUNCTION Z_IDOC_INPUT_FW.
   READ TABLE idoc_contrl INTO ls_edidc INDEX 1.
   TRY.
       lo_interface ?= zcl_idoc_input=>get_instance( iv_direction  = ls_edidc-direct
+                                                    iv_parnum     = ls_edidc-sndprn
+                                                    iv_partyp     = ls_edidc-sndprt
+                                                    iv_parfct     = ls_edidc-sndpfc
                                                     iv_mestyp     = ls_edidc-mestyp
                                                     iv_mescod     = ls_edidc-mescod
                                                     iv_mesfct     = ls_edidc-mesfct ).

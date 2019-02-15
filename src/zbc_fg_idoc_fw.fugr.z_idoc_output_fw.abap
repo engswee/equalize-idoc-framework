@@ -1,5 +1,5 @@
 FUNCTION Z_IDOC_OUTPUT_FW.
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 *"*"Local Interface:
 *"  IMPORTING
 *"     REFERENCE(OBJECT) TYPE  NAST
@@ -12,7 +12,7 @@ FUNCTION Z_IDOC_OUTPUT_FW.
 *"  EXCEPTIONS
 *"      ERROR_MESSAGE_RECEIVED
 *"      DATA_NOT_RELEVANT_FOR_SENDING
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 DATA:
     lo_interface    TYPE REF TO zcl_idoc_output,
     lo_excp_error   TYPE REF TO zcx_idoc_generic_process_error,
@@ -21,6 +21,9 @@ DATA:
 
   TRY.
       lo_interface ?= zcl_idoc_output=>get_instance( iv_direction  = control_record_in-direct
+                                                     iv_parnum     = control_record_in-rcvprn
+                                                     iv_partyp     = control_record_in-rcvprt
+                                                     iv_parfct     = control_record_in-rcvpfc
                                                      iv_mestyp     = control_record_in-mestyp
                                                      iv_mescod     = control_record_in-mescod
                                                      iv_mesfct     = control_record_in-mesfct ).

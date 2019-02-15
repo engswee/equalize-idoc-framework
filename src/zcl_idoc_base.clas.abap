@@ -23,6 +23,9 @@ public section.
   class-methods GET_INSTANCE
     importing
       !IV_DIRECTION type EDI_DIRECT
+      !IV_PARNUM type EDIPPARNUM
+      !IV_PARTYP type EDIPPARTYP
+      !IV_PARFCT type EDI_PARFCT
       !IV_MESTYP type EDI_MESTYP
       !IV_MESCOD type EDI_MESCOD
       !IV_MESFCT type EDI_MESFCT
@@ -280,6 +283,9 @@ METHOD get_instance.
     SELECT SINGLE idoc_class FROM zbc_idoc_cfg
            INTO lv_classname
            WHERE direct   = iv_direction
+             AND parnum   = iv_parnum
+             AND partyp   = iv_partyp
+             AND parfct   = iv_parfct
              AND mestyp   = iv_mestyp
              AND mescod   = iv_mescod
              AND mesfct   = iv_mesfct.
@@ -289,6 +295,9 @@ METHOD get_instance.
     SELECT SINGLE * FROM zbc_idoc_options
            INTO ls_idoc_options
            WHERE direct   = iv_direction
+             AND parnum   = iv_parnum
+             AND partyp   = iv_partyp
+             AND parfct   = iv_parfct
              AND mestyp   = iv_mestyp
              AND mescod   = iv_mescod
              AND mesfct   = iv_mesfct.

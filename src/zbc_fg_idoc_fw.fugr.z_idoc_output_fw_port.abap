@@ -1,9 +1,9 @@
 FUNCTION Z_IDOC_OUTPUT_FW_PORT.
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 *"*"Local Interface:
 *"  TABLES
 *"      I_EDIDC STRUCTURE  EDIDC
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 DATA:
     lo_interface  TYPE REF TO zcl_idoc_output,
     lo_excp_error TYPE REF TO zcx_idoc_generic_process_error,
@@ -13,6 +13,9 @@ DATA:
   LOOP AT i_edidc[] INTO ls_edidc.
     TRY.
         lo_interface ?= zcl_idoc_output=>get_instance( iv_direction  = ls_edidc-direct
+                                                       iv_parnum     = ls_edidc-rcvprn
+                                                       iv_partyp     = ls_edidc-rcvprt
+                                                       iv_parfct     = ls_edidc-rcvpfc
                                                        iv_mestyp     = ls_edidc-mestyp
                                                        iv_mescod     = ls_edidc-mescod
                                                        iv_mesfct     = ls_edidc-mesfct ).
