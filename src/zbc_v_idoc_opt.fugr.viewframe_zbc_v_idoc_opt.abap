@@ -1,9 +1,9 @@
 *---------------------------------------------------------------------*
-*    program for:   VIEWFRAME_ZBC_V_IDOC_CFG
-*   generation date: 13.02.2019 at 15:26:44
+*    program for:   VIEWFRAME_ZBC_V_IDOC_OPT
+*   generation date: 19.02.2019 at 10:24:20
 *   view maintenance generator version: #001407#
 *---------------------------------------------------------------------*
-FUNCTION VIEWFRAME_ZBC_V_IDOC_CFG      .
+FUNCTION VIEWFRAME_ZBC_V_IDOC_OPT      .
 
   DATA: ENQUEUE_PROCESSED TYPE C. "flag: view enqueued by VIEWFRAME_...
 
@@ -14,15 +14,15 @@ FUNCTION VIEWFRAME_ZBC_V_IDOC_CFG      .
 *----------------------------------------------------------------------*
 * Select data from database                                            *
 *----------------------------------------------------------------------*
-CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
+CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_OPT'
          EXPORTING
               FCODE          = READ
               VIEW_ACTION    = VIEW_ACTION
               VIEW_NAME      = VIEW_NAME
          TABLES
               EXCL_CUA_FUNCT = EXCL_CUA_FUNCT
-EXTRACT = ZBC_V_IDOC_CFG_EXTRACT
-TOTAL = ZBC_V_IDOC_CFG_TOTAL
+EXTRACT = ZBC_V_IDOC_OPT_EXTRACT
+TOTAL = ZBC_V_IDOC_OPT_TOTAL
               X_HEADER       = X_HEADER
               X_NAMTAB       = X_NAMTAB
               DBA_SELLIST    = DBA_SELLIST
@@ -46,7 +46,7 @@ TOTAL = ZBC_V_IDOC_CFG_TOTAL
 * Edit data                                                            *
 *----------------------------------------------------------------------*
       DO.
-CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
+CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_OPT'
              EXPORTING
                   FCODE           = EDIT
                   VIEW_ACTION     = MAINT_MODE
@@ -54,11 +54,11 @@ CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
                   CORR_NUMBER     = CORR_NUMBER
              IMPORTING
                   UCOMM           = FUNCTION
-UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_CFG-UPD_FLAG
+UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_OPT-UPD_FLAG
              TABLES
                   EXCL_CUA_FUNCT  = EXCL_CUA_FUNCT
-EXTRACT = ZBC_V_IDOC_CFG_EXTRACT
-TOTAL = ZBC_V_IDOC_CFG_TOTAL
+EXTRACT = ZBC_V_IDOC_OPT_EXTRACT
+TOTAL = ZBC_V_IDOC_OPT_TOTAL
                   X_HEADER        = X_HEADER
                   X_NAMTAB        = X_NAMTAB
                   DBA_SELLIST     = DBA_SELLIST
@@ -91,22 +91,22 @@ TOTAL = ZBC_V_IDOC_CFG_TOTAL
            FUNCTION EQ GET_ANOTHER_VIEW    OR
            FUNCTION EQ SWITCH_TRANSP_TO_UPD_MODE OR
            FUNCTION EQ END ) AND
-STATUS_ZBC_V_IDOC_CFG-UPD_FLAG NE SPACE.
+STATUS_ZBC_V_IDOC_OPT-UPD_FLAG NE SPACE.
         PERFORM BEENDEN.
         CASE SY-SUBRC.
           WHEN 0.
-CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
+CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_OPT'
                   EXPORTING
                       FCODE           = SAVE
                       VIEW_ACTION     = MAINT_MODE
                       VIEW_NAME       = VIEW_NAME
                       CORR_NUMBER     = CORR_NUMBER
                   IMPORTING
-UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_CFG-UPD_FLAG
+UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_OPT-UPD_FLAG
                   TABLES
                       EXCL_CUA_FUNCT  = EXCL_CUA_FUNCT
-EXTRACT = ZBC_V_IDOC_CFG_EXTRACT
-TOTAL = ZBC_V_IDOC_CFG_TOTAL
+EXTRACT = ZBC_V_IDOC_OPT_EXTRACT
+TOTAL = ZBC_V_IDOC_OPT_TOTAL
                       X_HEADER        = X_HEADER
                       X_NAMTAB        = X_NAMTAB
                       DBA_SELLIST     = DBA_SELLIST
@@ -118,7 +118,7 @@ TOTAL = ZBC_V_IDOC_CFG_TOTAL
                       SAVING_CORRECTION_FAILED  = 3.
             CASE SY-SUBRC.
               WHEN 0.
-IF STATUS_ZBC_V_IDOC_CFG-UPD_FLAG EQ SPACE. EXIT. ENDIF.
+IF STATUS_ZBC_V_IDOC_OPT-UPD_FLAG EQ SPACE. EXIT. ENDIF.
               WHEN 1. RAISE MISSING_CORR_NUMBER.
               WHEN 2. RAISE NO_VALUE_FOR_SUBSET_IDENT.
               WHEN 3.
@@ -130,11 +130,11 @@ IF STATUS_ZBC_V_IDOC_CFG-UPD_FLAG EQ SPACE. EXIT. ENDIF.
 *  ...2nd: transport request                                           *
 *----------------------------------------------------------------------*
       ELSEIF FUNCTION EQ TRANSPORT.
-IF STATUS_ZBC_V_IDOC_CFG-UPD_FLAG NE SPACE.
+IF STATUS_ZBC_V_IDOC_OPT-UPD_FLAG NE SPACE.
           PERFORM TRANSPORTIEREN.
           CASE SY-SUBRC.
             WHEN 0.
-CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
+CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_OPT'
                     EXPORTING
                         FCODE           = SAVE
                         VIEW_ACTION     = MAINT_MODE
@@ -142,11 +142,11 @@ CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
                         CORR_NUMBER     = CORR_NUMBER
                     IMPORTING
                               UPDATE_REQUIRED =
-STATUS_ZBC_V_IDOC_CFG-UPD_FLAG
+STATUS_ZBC_V_IDOC_OPT-UPD_FLAG
                     TABLES
                         EXCL_CUA_FUNCT  = EXCL_CUA_FUNCT
-EXTRACT = ZBC_V_IDOC_CFG_EXTRACT
-TOTAL = ZBC_V_IDOC_CFG_TOTAL
+EXTRACT = ZBC_V_IDOC_OPT_EXTRACT
+TOTAL = ZBC_V_IDOC_OPT_TOTAL
                         X_HEADER        = X_HEADER
                         X_NAMTAB        = X_NAMTAB
                         DBA_SELLIST     = DBA_SELLIST
@@ -178,18 +178,18 @@ TOTAL = ZBC_V_IDOC_CFG_TOTAL
 *----------------------------------------------------------------------*
 *  Refresh selected entries from database or save data into database   *
 *----------------------------------------------------------------------*
-CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_CFG'
+CALL FUNCTION 'VIEWPROC_ZBC_V_IDOC_OPT'
              EXPORTING
                   FCODE               = FUNCTION
                   VIEW_ACTION         = MAINT_MODE
                   VIEW_NAME           = VIEW_NAME
                   CORR_NUMBER         = CORR_NUMBER
              IMPORTING
-UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_CFG-UPD_FLAG
+UPDATE_REQUIRED = STATUS_ZBC_V_IDOC_OPT-UPD_FLAG
              TABLES
                   EXCL_CUA_FUNCT      = EXCL_CUA_FUNCT
-EXTRACT = ZBC_V_IDOC_CFG_EXTRACT
-TOTAL = ZBC_V_IDOC_CFG_TOTAL
+EXTRACT = ZBC_V_IDOC_OPT_EXTRACT
+TOTAL = ZBC_V_IDOC_OPT_TOTAL
                   X_HEADER            = X_HEADER
                   X_NAMTAB            = X_NAMTAB
                   DBA_SELLIST         = DBA_SELLIST

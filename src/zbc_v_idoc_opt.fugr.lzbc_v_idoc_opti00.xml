@@ -3,8 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>LZBC_V_IDOC_CFGT00</NAME>
+    <NAME>LZBC_V_IDOC_OPTI00</NAME>
     <STATE>A</STATE>
+    <SQLX>X</SQLX>
     <SUBC>I</SUBC>
     <RLOAD>E</RLOAD>
    </PROGDIR>

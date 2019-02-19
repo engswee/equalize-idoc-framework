@@ -4,10 +4,10 @@ class ZCX_IDOC_GENERIC_PROCESS_ERROR definition
   create public .
 
 public section.
+
 *"* public components of class ZCX_IDOC_GENERIC_PROCESS_ERROR
 *"* do not include other source files here!!!
-
-  constants ZCX_IDOC_GENERIC_PROCESS_ERROR type SOTR_CONC value '5220BB8FC0870B80E10080000AD00C21'. "#EC NOTEXT
+  constants ZCX_IDOC_GENERIC_PROCESS_ERROR type SOTR_CONC value '00505697691A1ED98BBA9D1A6092251D' ##NO_TEXT.
   data MSGTY type SY-MSGTY read-only .
   data MSG type STRING read-only .
   data MSGID type SY-MSGID read-only .
@@ -42,7 +42,7 @@ ENDCLASS.
 CLASS ZCX_IDOC_GENERIC_PROCESS_ERROR IMPLEMENTATION.
 
 
-method CONSTRUCTOR.
+  method CONSTRUCTOR.
 CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 TEXTID = TEXTID
@@ -59,5 +59,5 @@ me->MSGV1 = MSGV1 .
 me->MSGV2 = MSGV2 .
 me->MSGV3 = MSGV3 .
 me->MSGV4 = MSGV4 .
-endmethod.
+  endmethod.
 ENDCLASS.

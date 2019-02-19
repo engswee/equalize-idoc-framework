@@ -402,11 +402,11 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZBC_IDOC_CFG-DIRECT</NAME>
-       <TEXT>+_______________________________________</TEXT>
+       <TEXT>Direction_______________________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>040</LENGTH>
-       <VISLENGTH>030</VISLENGTH>
+       <LENGTH>048</LENGTH>
+       <VISLENGTH>048</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
        <REQU_ENTRY>N</REQU_ENTRY>
@@ -434,15 +434,15 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZBC_IDOC_CFG-PARTYP</NAME>
-       <TEXT>Partn.Type______________________________</TEXT>
+       <TEXT>Type______________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>003</COLUMN>
-       <LENGTH>040</LENGTH>
-       <VISLENGTH>010</VISLENGTH>
+       <LENGTH>034</LENGTH>
+       <VISLENGTH>034</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
-       <MODIFIC>2</MODIFIC>
+       <MODIFIC>F</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -485,15 +485,15 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZBC_IDOC_CFG-MESCOD</NAME>
-       <TEXT>Msg._Var._______________________________</TEXT>
+       <TEXT>Code_______________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>006</COLUMN>
-       <LENGTH>040</LENGTH>
-       <VISLENGTH>010</VISLENGTH>
+       <LENGTH>035</LENGTH>
+       <VISLENGTH>035</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
-       <MODIFIC>1</MODIFIC>
+       <MODIFIC>F</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -502,15 +502,15 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZBC_IDOC_CFG-MESFCT</NAME>
-       <TEXT>Msg.funct.______________________________</TEXT>
+       <TEXT>Func______________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>007</COLUMN>
-       <LENGTH>040</LENGTH>
-       <VISLENGTH>010</VISLENGTH>
+       <LENGTH>034</LENGTH>
+       <VISLENGTH>034</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
-       <MODIFIC>1</MODIFIC>
+       <MODIFIC>F</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -550,13 +550,13 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-DIRECT</NAME>
-       <TEXT>_</TEXT>
+       <TEXT>____________</TEXT>
        <DROPDOWN>L</DROPDOWN>
        <ROLLING>X</ROLLING>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>001</LENGTH>
-       <VISLENGTH>007</VISLENGTH>
+       <LENGTH>012</LENGTH>
+       <VISLENGTH>012</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>CHAR</FORMAT>
@@ -572,12 +572,12 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-PARNUM</NAME>
-       <TEXT>__________</TEXT>
+       <TEXT>____________</TEXT>
        <ROLLING>X</ROLLING>
        <LINE>001</LINE>
        <COLUMN>002</COLUMN>
-       <LENGTH>010</LENGTH>
-       <VISLENGTH>005</VISLENGTH>
+       <LENGTH>012</LENGTH>
+       <VISLENGTH>012</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>CHAR</FORMAT>
@@ -594,11 +594,11 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-PARTYP</NAME>
-       <TEXT>__</TEXT>
+       <TEXT>_____</TEXT>
        <ROLLING>X</ROLLING>
        <LINE>001</LINE>
        <COLUMN>003</COLUMN>
-       <LENGTH>002</LENGTH>
+       <LENGTH>005</LENGTH>
        <VISLENGTH>005</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
@@ -615,10 +615,10 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-PARFCT</NAME>
-       <TEXT>__</TEXT>
+       <TEXT>_____</TEXT>
        <LINE>001</LINE>
        <COLUMN>004</COLUMN>
-       <LENGTH>002</LENGTH>
+       <LENGTH>005</LENGTH>
        <VISLENGTH>005</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
@@ -640,7 +640,7 @@
        <LINE>001</LINE>
        <COLUMN>005</COLUMN>
        <LENGTH>030</LENGTH>
-       <VISLENGTH>007</VISLENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>CHAR</FORMAT>
@@ -657,11 +657,12 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-MESCOD</NAME>
-       <TEXT>___</TEXT>
+       <TEXT>_____</TEXT>
+       <ROLLING>X</ROLLING>
        <LINE>001</LINE>
        <COLUMN>006</COLUMN>
-       <LENGTH>003</LENGTH>
-       <VISLENGTH>010</VISLENGTH>
+       <LENGTH>005</LENGTH>
+       <VISLENGTH>005</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>CHAR</FORMAT>
@@ -676,11 +677,12 @@
        <CONT_NAME>TCTRL_ZBC_IDOC_CFG</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZBC_IDOC_CFG-MESFCT</NAME>
-       <TEXT>___</TEXT>
+       <TEXT>_____</TEXT>
+       <ROLLING>X</ROLLING>
        <LINE>001</LINE>
        <COLUMN>007</COLUMN>
-       <LENGTH>003</LENGTH>
-       <VISLENGTH>010</VISLENGTH>
+       <LENGTH>005</LENGTH>
+       <VISLENGTH>005</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>CHAR</FORMAT>

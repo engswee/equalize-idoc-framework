@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>LZBC_V_IDOC_CFGTOP</NAME>
+    <NAME>LZBC_V_IDOC_OPTTOP</NAME>
     <STATE>A</STATE>
     <DBAPL>S</DBAPL>
     <DBNA>D$</DBNA>

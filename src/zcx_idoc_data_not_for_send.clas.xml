@@ -6,7 +6,7 @@
     <CLSNAME>ZCX_IDOC_DATA_NOT_FOR_SEND</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>Data not relevant for sending</DESCRIPT>
+    <DESCRIPT>Exception - Data not relevant for sending</DESCRIPT>
     <CATEGORY>40</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>

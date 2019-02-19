@@ -6,7 +6,7 @@
     <CLSNAME>ZCX_IDOC_GENERIC_PROCESS_ERROR</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>Generic IDoc Processing Error</DESCRIPT>
+    <DESCRIPT>Exception - Generic IDoc Processing Error</DESCRIPT>
     <CATEGORY>40</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>

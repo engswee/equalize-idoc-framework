@@ -3,10 +3,10 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_IDOC_INPUT_GMVT</CLSNAME>
+    <CLSNAME>ZCL_IDOC_INPUT_GM</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>IDoc Framework Inbound Good Movement</DESCRIPT>
+    <DESCRIPT>IDoc Framework Inbound Goods Movement Creation</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

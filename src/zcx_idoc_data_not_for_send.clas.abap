@@ -5,10 +5,10 @@ class ZCX_IDOC_DATA_NOT_FOR_SEND definition
   create public .
 
 public section.
+
 *"* public components of class ZCX_IDOC_DATA_NOT_FOR_SEND
 *"* do not include other source files here!!!
-
-  constants ZCX_IDOC_DATA_NOT_FOR_SEND type SOTR_CONC value '53550E88D1BD0D40E10080000AD00C21'. "#EC NOTEXT
+  constants ZCX_IDOC_DATA_NOT_FOR_SEND type SOTR_CONC value '00505697691A1ED98BBA9DB88013C51D' ##NO_TEXT.
   data MSG type STRING .
 
   methods CONSTRUCTOR
@@ -29,7 +29,7 @@ ENDCLASS.
 CLASS ZCX_IDOC_DATA_NOT_FOR_SEND IMPLEMENTATION.
 
 
-method CONSTRUCTOR.
+  method CONSTRUCTOR.
 CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 TEXTID = TEXTID
@@ -39,5 +39,5 @@ PREVIOUS = PREVIOUS
    me->textid = ZCX_IDOC_DATA_NOT_FOR_SEND .
  ENDIF.
 me->MSG = MSG .
-endmethod.
+  endmethod.
 ENDCLASS.

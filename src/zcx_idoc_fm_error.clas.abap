@@ -5,10 +5,10 @@ class ZCX_IDOC_FM_ERROR definition
   create public .
 
 public section.
+
 *"* public components of class ZCX_IDOC_FM_ERROR
 *"* do not include other source files here!!!
-
-  constants ZCX_IDOC_FM_ERROR type SOTR_CONC value '51E61F4416D305D0E10080000AD00C21'. "#EC NOTEXT
+  constants ZCX_IDOC_FM_ERROR type SOTR_CONC value '00505697691A1ED98BBA9D1A6091C51D' ##NO_TEXT.
 
   methods CONSTRUCTOR
     importing
@@ -27,7 +27,7 @@ ENDCLASS.
 CLASS ZCX_IDOC_FM_ERROR IMPLEMENTATION.
 
 
-method CONSTRUCTOR.
+  method CONSTRUCTOR.
 CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 TEXTID = TEXTID
@@ -36,5 +36,5 @@ PREVIOUS = PREVIOUS
  IF textid IS INITIAL.
    me->textid = ZCX_IDOC_FM_ERROR .
  ENDIF.
-endmethod.
+  endmethod.
 ENDCLASS.

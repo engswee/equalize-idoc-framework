@@ -6,7 +6,7 @@
     <CLSNAME>ZCX_IDOC_POSTPROCESS_ERROR</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>IDoc Postprocessing error</DESCRIPT>
+    <DESCRIPT>Exception - IDoc Postprocessing error</DESCRIPT>
     <CATEGORY>40</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>

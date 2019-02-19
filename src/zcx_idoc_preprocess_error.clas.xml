@@ -6,7 +6,7 @@
     <CLSNAME>ZCX_IDOC_PREPROCESS_ERROR</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>IDoc Preprocessing error</DESCRIPT>
+    <DESCRIPT>Exception - IDoc Preprocessing error</DESCRIPT>
     <CATEGORY>40</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>

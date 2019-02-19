@@ -1,16 +1,16 @@
 *---------------------------------------------------------------------*
-*    program for:   VIEWPROC_ZBC_V_IDOC_CFG
-*   generation date: 13.02.2019 at 15:26:45
+*    program for:   VIEWPROC_ZBC_V_IDOC_OPT
+*   generation date: 19.02.2019 at 10:24:20
 *   view maintenance generator version: #001407#
 *---------------------------------------------------------------------*
-FUNCTION VIEWPROC_ZBC_V_IDOC_CFG       .
+FUNCTION VIEWPROC_ZBC_V_IDOC_OPT       .
 *----------------------------------------------------------------------*
 * Initialization: set field-symbols etc.                               *
 *----------------------------------------------------------------------*
    IF LAST_VIEW_INFO NE VIEW_NAME.
-ASSIGN ZBC_V_IDOC_CFG TO <TABLE1>.
-ASSIGN *ZBC_V_IDOC_CFG TO <INITIAL>.
-ASSIGN STATUS_ZBC_V_IDOC_CFG TO <STATUS>.
+ASSIGN ZBC_V_IDOC_OPT TO <TABLE1>.
+ASSIGN *ZBC_V_IDOC_OPT TO <INITIAL>.
+ASSIGN STATUS_ZBC_V_IDOC_OPT TO <STATUS>.
      PERFORM INITIALISIEREN.
    ENDIF.
    PERFORM JUSTIFY_ACTION_MODE.
@@ -25,7 +25,7 @@ ASSIGN STATUS_ZBC_V_IDOC_CFG TO <STATUS>.
     IF X_HEADER-FRM_RP_GET NE SPACE.
             PERFORM (X_HEADER-FRM_RP_GET) IN PROGRAM.
     ELSE.
-PERFORM GET_DATA_ZBC_V_IDOC_CFG.
+PERFORM GET_DATA_ZBC_V_IDOC_OPT.
     ENDIF.
     IF FCODE EQ READ_AND_EDIT. FCODE = EDIT. ENDIF.
   ENDIF.
@@ -43,7 +43,7 @@ PERFORM GET_DATA_ZBC_V_IDOC_CFG.
           PERFORM (X_HEADER-FRM_RP_UPD) IN PROGRAM.
         ELSE.
           IF SY-SUBRC EQ 0.
-PERFORM DB_UPD_ZBC_V_IDOC_CFG.
+PERFORM DB_UPD_ZBC_V_IDOC_OPT.
           ENDIF.
         ENDIF.
         PERFORM AFTER_SAVING.
@@ -58,5 +58,5 @@ PERFORM DB_UPD_ZBC_V_IDOC_CFG.
       PERFORM RESET_ENTRIES USING DETAIL_BILD.
 *.......................................................................
   ENDCASE.
-MOVE STATUS_ZBC_V_IDOC_CFG-UPD_FLAG TO UPDATE_REQUIRED.
+MOVE STATUS_ZBC_V_IDOC_OPT-UPD_FLAG TO UPDATE_REQUIRED.
 ENDFUNCTION.

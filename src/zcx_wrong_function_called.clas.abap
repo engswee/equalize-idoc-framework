@@ -5,10 +5,10 @@ class ZCX_WRONG_FUNCTION_CALLED definition
   create public .
 
 public section.
+
 *"* public components of class ZCX_WRONG_FUNCTION_CALLED
 *"* do not include other source files here!!!
-
-  constants ZCX_WRONG_FUNCTION_CALLED type SOTR_CONC value '51E61E5E0C1C0900E10080000AD00C21'. "#EC NOTEXT
+  constants ZCX_WRONG_FUNCTION_CALLED type SOTR_CONC value '00505697691A1ED98BBA9D91B295E51D' ##NO_TEXT.
 
   methods CONSTRUCTOR
     importing
@@ -27,7 +27,7 @@ ENDCLASS.
 CLASS ZCX_WRONG_FUNCTION_CALLED IMPLEMENTATION.
 
 
-method CONSTRUCTOR.
+  method CONSTRUCTOR.
 CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 TEXTID = TEXTID
@@ -36,5 +36,5 @@ PREVIOUS = PREVIOUS
  IF textid IS INITIAL.
    me->textid = ZCX_WRONG_FUNCTION_CALLED .
  ENDIF.
-endmethod.
+  endmethod.
 ENDCLASS.

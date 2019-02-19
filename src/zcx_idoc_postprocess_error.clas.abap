@@ -5,10 +5,10 @@ class ZCX_IDOC_POSTPROCESS_ERROR definition
   create public .
 
 public section.
+
 *"* public components of class ZCX_IDOC_POSTPROCESS_ERROR
 *"* do not include other source files here!!!
-
-  constants ZCX_IDOC_POSTPROCESS_ERROR type SOTR_CONC value '53317D8D45CB0C60E10080000AD00C21'. "#EC NOTEXT
+  constants ZCX_IDOC_POSTPROCESS_ERROR type SOTR_CONC value '00505697691A1ED98BBA9D424303051D' ##NO_TEXT.
 
   methods CONSTRUCTOR
     importing
@@ -35,7 +35,7 @@ ENDCLASS.
 CLASS ZCX_IDOC_POSTPROCESS_ERROR IMPLEMENTATION.
 
 
-method CONSTRUCTOR.
+  method CONSTRUCTOR.
 CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 TEXTID = TEXTID
@@ -52,5 +52,5 @@ MSGV4 = MSGV4
  IF textid IS INITIAL.
    me->textid = ZCX_IDOC_POSTPROCESS_ERROR .
  ENDIF.
-endmethod.
+  endmethod.
 ENDCLASS.
